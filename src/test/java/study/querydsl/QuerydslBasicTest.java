@@ -111,4 +111,13 @@ public class QuerydslBasicTest {
                 .fetchCount();
 
     }
+    @Test
+    public void count() {
+        Long totalCount = queryFactory
+                .select(member.count())
+                .from(member)
+                .fetchOne();
+        System.out.println("totalCount = " + totalCount);
+    }
+
 }
