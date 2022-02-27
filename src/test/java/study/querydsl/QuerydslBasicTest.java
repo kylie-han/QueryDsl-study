@@ -632,4 +632,13 @@ public class QuerydslBasicTest {
             System.out.println("member1 = " + member1);
         }
     }
+    @Test
+    public void bulkDelete() {
+        queryFactory
+                .delete(member)
+                .where(member.age.gt(18))
+                .execute();
+        em.flush();
+        em.clear();
+    }
 }
