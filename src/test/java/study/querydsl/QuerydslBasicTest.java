@@ -361,7 +361,7 @@ public class QuerydslBasicTest {
                 .containsExactly(30, 40);
     }
     /**
-     * 나이가 평균 이상인 회원
+     * 나이가 10 이상인 회원
      */
     @Test
     public void subQueryIn() {
