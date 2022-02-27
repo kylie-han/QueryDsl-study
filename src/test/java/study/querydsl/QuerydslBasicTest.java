@@ -53,7 +53,7 @@ public class QuerydslBasicTest {
     }
     @Test
     public void startQuerydsl() {
-
+        QMember m1 = new QMember("m1");
         Member findMember = queryFactory
                 .select(member)
                 .from(member)
