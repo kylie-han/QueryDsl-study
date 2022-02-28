@@ -11,7 +11,7 @@ public class MemberTeamDto {
     private Long teamId;
     private String teamName;
 
-    //querydsl 라이브러리에 의존하게 된다.
+    //querydsl 라이브러리에 의존하게 되는 단점
     @QueryProjection
     public MemberTeamDto(Long memberId, String username, int age, Long teamId, String teamName) {
         this.memberId = memberId;
